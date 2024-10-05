@@ -31,3 +31,22 @@ Coming out of exploring the data I want to further analyze attributes of claims 
 that might be of use to me understanding the data. My upmost interest of my client would be what variables or data would be most useful <br> 
 in predicting our `claim_status`.
 
+## Statistical Testing (A/B Test) Results
+In this section of the project I am trying to understand the relationship `video_view_count` and `verified_status ` as video_view_count was one of the variables we wanted to dive deeper into due to it having one of the upmost value to the project ask. <br>
+To analyze the relationship we will build a **hypothesis test**. 
+### Details 
+The first approach taken was to observe the mean values of `video_view_counts` for each group in the `verified_status` variable within our dataset. <br>
+From examning the findings it was found that **unverified** accounts had a mean of ***265,663 views*** while **verified** accounts had a mean value of ***91,439 views***. <br>
+![image](https://github.com/user-attachments/assets/80a5095e-d65c-495e-b5c9-377e9bf1adc1) <br>
+The second approach was a **two-sample t-test**. The hypotheis test proved that the original findings were statisticall significant, showing that the differences in the sample data is due to an actual difference in the population means.
+### Key Insights 
+- This analysis shows that there is a statistically significant difference in TikTok videos posted by verified and unverified user accounts.
+- These results suggest there might be behavioral differences between verified and unverified accounts.
+- It would be interesting to investigate the root cause of these differences. For example, we could ask: <br>
+        - Do unverified accounts post more engaging content and is that content a claim or opinion? <br>
+        - Are unverified accounts associated with spam bots that help increase view counts?
+  ### Next Steps
+  I would move forward building a **regression model**  on `verified_status`. <br>
+  A regression model for `verified_status` can help understand user behavior in the group of verified users. <br>
+  Then, it can be applied to deem results from a classification model that will be created later on. 
+
