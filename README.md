@@ -23,3 +23,11 @@ Median view count opinions: 4953.0
 ### Key Insights 
 - There is only a slight difference between opinions and claims. With this information we can proceed knowing there is an equal amount of claims and opinions in this dataset.
 - Now that we know the key variables to be focused on and the initial analysis we can go forward with the process of exploratory data analysis.
+
+## Data Exploration
+During this stage I examined the count frequencies, distribution, mean and median values, outliers, missing data, and much more. <br>
+I also created scatter plots where I analyzed correlation between variables especially between the variable `claim_status` and others. <br>
+Coming out of exploring the data I want to further analyze attributes of claims and of opinions. Also, would like to know other variables <br>
+that might be of use to me understanding the data. My upmost interest of my client would be what variables or data would be most useful <br> 
+in predicting our `claim_status`.
+
