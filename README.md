@@ -50,3 +50,20 @@ The second approach was a **two-sample t-test**. The hypotheis test proved that 
   A regression model for `verified_status` can help understand user behavior in the group of verified users. <br>
   Then, it can be applied to deem results from a classification model that will be created later on. 
 
+## Regression Analysis
+### Overview
+The TikTok team end goal is to build a model that helps in the classification of claims for user submission. In an earlier project we observed that if a user was verified they were most likely to post an opinion based video.
+Since the end goal is to predict claims or opinions, it is important to predict user behavior of verified account types which tend to post more opinions. Based on that information, we will build a ***logistic regression*** model that
+predicts `verified_status`.
+### Project Status
+We included the variable `verified_status` in our model because we noticed a correlation between whether an account is verified and the type of video content it shares. Since we are trying to predict outcomes using this kind of data, a ***logistic regression*** model is a good fit, as it works well for data that falls into different categories (like whether an account is verified or not). <BR>
+**A LOOK AT THE MODEL RESULTS** <br>
+The logistic regression model achieved a precision of 68% and a recall of 65% (weighted averages). This model achieved an f1 accuracy of 64%. These results help us determine key insights on video features written in the "key insights" section. <br>
+### Key Insights 
+![image](https://github.com/user-attachments/assets/7c7dd140-87f5-4eae-8146-a89831fb2151) <br>
+Based on the estimated model coefficients from the logistic regression, longer videos tend to be associated with higher odds of a user being verified. Other video features above have small estimated coefficients in the model, so their association with verified status is not very large. As a result we see that besides seem to not be in association with verified status. <br>
+
+**CONFUSION MATRIX FOR LOGISTIC REGRESSION MODEL** <BR>
+![image](https://github.com/user-attachments/assets/fe6f76ec-77a3-4acb-a075-38c521f47d41) <br>
+*The upper-left displays the number of videos posted by unverified accounts. The upper-right displays the number of videos posted by unverified accounts. Lower-left displays the number of videos posted by verified accounts and lower-right displays the number of videos posted by verified accounts.*
+
