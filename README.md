@@ -67,3 +67,16 @@ Based on the estimated model coefficients from the logistic regression, longer v
 ![image](https://github.com/user-attachments/assets/fe6f76ec-77a3-4acb-a075-38c521f47d41) <br>
 *The upper-left displays the number of videos posted by unverified accounts. The upper-right displays the number of videos posted by unverified accounts. Lower-left displays the number of videos posted by verified accounts and lower-right displays the number of videos posted by verified accounts.*
 
+## Machine Learning Model Outcomes (Classification Model)
+### Overview
+Previously, we investigated that video engagement levels were high suggestives as either claims or opions. This gives us confidence that this model will meet all performance requirements. <br>
+### Solution to the Original Problem
+I built a tree-based classification model, more specifically a random forest model. The model was used to predict on a hold-out validation dataset, and final model selection was determined by the model with the best recall score. The final model was used to scoe a test dataset to estimate future performance. <br> 
+### Insights
+The Random Forest Model perfomed very well ! The models recall score was 0.995. <br>
+Performance on the test holdout set showed near perfect scores, with only 5 miscalculated samples out of a total 3,817 ! <br>
+The analysis showed exactly like previous projects that the primary predictors, were all related to video engagement levels. `Video_view_count, share_count, and download_count accounting for almost all predictive signal in the data. Based on these results, we can come to conclusion that videos with higher user engagement levels were much more likely to be claims. <br>
+![image](https://github.com/user-attachments/assets/19a04d6f-db38-48db-94d7-7db56b814cf7) 
+![image](https://github.com/user-attachments/assets/c82570f1-803c-4434-945b-7c164d1525b7)
+
+
